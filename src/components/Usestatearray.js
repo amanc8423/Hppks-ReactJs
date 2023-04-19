@@ -12,14 +12,14 @@ setText("")
     return ( 
    <>
 
-{a.map((el,i)=>
-<div key={i}> {el} </div>
-)}
-
 <input type="text" value={text} 
 onChange={(e)=>setText(e.target.value)} />
 
 <button onClick={handleonClick}>Add Data</button>
+
+{a.map((el,i)=>
+<div key={i}> {el} </div>
+)}
 
     </>
   )

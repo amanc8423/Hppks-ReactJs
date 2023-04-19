@@ -22,6 +22,11 @@ import Listrender from './components/Listrender';
 import Listkey from './components/Listkey';
 import Usestateobject from './components/Usestateobject';
 import Usestatearray from './components/Usestatearray';
+import Axiosget from './Axiostut/Axiosget';
+import Axiospost from './Axiostut/Axiospost';
+import Axiosputdel from './Axiostut/Axiosputdel';
+import Router1 from './Router/Router1';
+import Redux1 from './Redux/Redux1';
 
 function App() {
 const [state,setState]=useState(0);
@@ -34,6 +39,7 @@ const f=()=>{
     console.log(data);
   }
 
+  
 
 // below functin is for liftin stateup
 
@@ -136,9 +142,32 @@ const f=()=>{
 <div>usestate with object IN REACT</div> <br />
   <Usestateobject/> */}
 
-  <hr />
+  {/* <hr />
 <div>usestate with array IN REACT</div> <br />
-  <Usestatearray/>
+  <Usestatearray/> */}
+
+  {/* <hr />
+<div>axios get IN REACT</div> <br />
+  <Axiosget/> */}
+
+  
+  {/* <hr />
+<div>axios post IN REACT</div> <br />
+  <Axiospost/> */}
+
+  {/* <hr />
+<div>axios put del IN REACT</div> <br />
+  <Axiosputdel/> */}
+
+  {/* <hr />
+<div>router IN REACT</div> <br />
+  <Router1/> */}
+
+  <hr />
+<div>redux IN REACT</div> <br />
+  <Redux1/>
+
+  
   
 
 
