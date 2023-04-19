@@ -10,25 +10,56 @@ import Uselayouteffect from './components/Uselayouteffect';
 import Usememo from './components/Usememo';
 import Usecallback from './components/Usecallback';
 import Customhook from './components/Customhook';
+import Basic1 from './components/Basic1';
+import Props from './components/Props';
+import Propsdefault from './components/Propsdefault';
+import Form from './components/Form';
+import Formuncontrol from './components/Formuncontrol';
+import Liftingstateup from './components/Liftingstateup';
+import Regiform from './components/Regiform';
+import { useState } from 'react';
+import Listrender from './components/Listrender';
+import Listkey from './components/Listkey';
+import Usestateobject from './components/Usestateobject';
+import Usestatearray from './components/Usestatearray';
 
 function App() {
+const [state,setState]=useState(0);
+const f=()=>{
+  setState(state+1);
+  console.log(state);
+}
+
+  const getData=(data)=>{
+    console.log(data);
+  }
+
+
+// below functin is for liftin stateup
+
+
   return (
   <>
 {/* <hr />
 <div>useState IN REACT</div> <br />
-<Usestate/>
-<hr />
+<Usestate/> */}
+
+{/* <hr />
 <div>useEffect IN REACT</div> <br />
-<Useeffect/>
-<hr />
+<Useeffect/> */}
+
+{/* <hr />
 <div>contextapi IN REACT</div> <br />
-<Contextapi/>
-<hr />
+<Contextapi/> */}
+
+{/* <hr />
 <div>useContext hook IN REACT</div> <br />
-<Usecontext/>
+<Usecontext/> */}
+
+{/* 
 <hr />
 <div>STATES IN REACT</div> <br />
-<State/> */}
+<State/>  */}
 
 {/* <hr />
 <div>useRef IN REACT</div> <br />
@@ -50,9 +81,65 @@ function App() {
 <div>useCallback IN REACT</div> <br />
 <Usecallback/> */}
 
-<hr />
+{/* <hr />
 <div>customhooks IN REACT</div> <br />
-<Customhook/>
+<Customhook/> */}
+
+{/* <hr />
+<div>Basic1 IN REACT</div> <br />
+<Basic1/> */}
+
+{/* <hr />
+<div>Props IN REACT</div> <br />
+<Props name="aman"/>
+<Props name="ajay"/>
+<Props name="atul"/> */}
+{/* 
+<hr />
+<div>Props IN REACT</div> <br />
+<Propsdefault name = "avi" age={10} city="kota" />
+<Propsdefault  age={10} city="kota" />
+<Propsdefault name = "avi"  city="kota" /> */}
+
+{/* 
+<hr />
+<div>Form IN REACT</div> <br />
+<Form/> */}
+
+{/* <hr />
+<div>Formuncontrol IN REACT</div> <br />
+<Formuncontrol/> */}
+
+{/* <hr />
+<div>Lifting state up IN REACT</div> <br />
+<Liftingstateup getData={getData}/> */}
+
+{/* <hr />
+<div>Registartion form IN REACT</div> <br />
+<Regiform/> */}
+{/* 
+<hr />
+<div>async setState IN REACT</div> <br />
+   <div>state is {state} . Check value in console it will always be 1 less than that of in this div</div>
+   <button onClick={f}>button</button> */}
+
+   {/* <hr />
+<div>list rendering IN REACT</div> <br />
+  <Listrender/> */}
+
+  {/* <hr />
+<div>listkey IN REACT</div> <br />
+  <Listkey/>
+   */}
+
+   {/* <hr />
+<div>usestate with object IN REACT</div> <br />
+  <Usestateobject/> */}
+
+  <hr />
+<div>usestate with array IN REACT</div> <br />
+  <Usestatearray/>
+  
 
 
 
