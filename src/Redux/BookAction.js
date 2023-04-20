@@ -1,9 +1,10 @@
 // actions
 
-import { buyBook } from "./BookTypes"
+import { buy_book } from "./BookTypes"
+
 const BookAction = () => {
   return {
-    type:buyBook
+    type:buy_book
   }
     
   

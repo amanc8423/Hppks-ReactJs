@@ -1,13 +1,16 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
+import BookAction from './BookAction'
 
 const Bookcontainer = () => {
    const noOfBooks =  useSelector(state=>state.NumberOfBooks)
+   const dispatch = useDispatch();
   return (
-    <div>
+    <>
       <div>BookContainer</div>
-      <h2>No of Books - {noOfBooks}</h2>
-    </div>
+      <h2>No of Books: {noOfBooks}</h2>
+      <button onClick={()=>{dispatch(BookAction())}}>Buy Book</button>
+    </>
   )
 }
 
