@@ -1,4 +1,4 @@
-// if we want to sned data form child to parent it is Lifting state up
+// if we want to send data from child to parent it is Lifting state up
 
 import React, { useState } from 'react'
 

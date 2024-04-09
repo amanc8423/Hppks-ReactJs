@@ -6,7 +6,7 @@ const Regiform = () => {
     });
 
     const[flag,setFlag]=useState(false);
-debugger;
+//debugger;
     useEffect(()=>{
 alert("REGISTERED!!!")
     },[flag])
@@ -23,6 +23,11 @@ if(!data.name ||!data.eml || !data.pswd){
 else{setFlag(true);}
 }
 
+const [myCar, setMyCar] = useState("Volvo");
+
+const handleChangeinsecondform = (event) => {
+  setMyCar(event.target.value)
+}
 
 
   return (
@@ -40,6 +45,21 @@ Password: <input type="password"  name="pswd"  value={data.pswd} onChange={handl
 <button type='submit'>SUBMIT</button>
 
       </form>
+
+
+
+{/* another form */}
+
+<form>
+      <select value={myCar} onChange={handleChangeinsecondform}>
+        <option value="Ford">Ford</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Fiat">Fiat</option>
+      </select>
+    </form>
+
+
+
     </>
   )
 }

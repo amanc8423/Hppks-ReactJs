@@ -3,19 +3,19 @@ import React from 'react'
 const Listrender = () => {
 
     const ipl = ["csk","mi","rcb"]
-const result = ipl.map((e)=> <h1>{e}</h1> )
+// const result = ipl.map((e)=> <h1>{e}</h1> )
 
   return (
     <>
       
-{/* <div>
+<div>
     {ipl.map((e,i)=>(
         <li >{e}</li>
     )) }
-</div> */}
+</div>
 
 
-<div>{result}</div>
+{/* <div>{result}</div> */}
 
     </>
   )

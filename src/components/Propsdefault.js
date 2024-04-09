@@ -19,7 +19,7 @@ age:PropTypes.number,city:PropTypes.string}
 
 Propsdefault.defaultProps = {
     name:"input name it is required",
-    number:"number expected",
+    age:"number expected",
     city:"cityname"
 }
 

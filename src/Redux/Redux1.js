@@ -1,4 +1,4 @@
-// redux is library for js applications 
+// redux is state management library for js applications 
 // redxu came before usecontext and contextapi
 // store->action->reducer 
 

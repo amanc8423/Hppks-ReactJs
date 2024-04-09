@@ -27,6 +27,8 @@ import Axiospost from './Axiostut/Axiospost';
 import Axiosputdel from './Axiostut/Axiosputdel';
 import Router1 from './Router/Router1';
 import Redux1 from './Redux/Redux1';
+import List from './components/List';
+import Fetchuse from './Axiostut/Fetchuse';
 
 function App() {
 const [state,setState]=useState(0);
@@ -39,16 +41,29 @@ const f=()=>{
     console.log(data);
   }
 
+  const items = [{
+    text:"aman"
+    }, { 
+      text:"kamal"
+    }, { 
+    text:"ajay"
+    } 
+    
+    ]
   
 
-// below functin is for liftin stateup
+// below functin is for lifting stateup
 
 
   return (
   <>
+
+
 {/* <hr />
-<div>useState IN REACT</div> <br />
-<Usestate/> */}
+<div>STATES IN REACT</div> <br />
+<State/>  */}
+
+
 
 {/* <hr />
 <div>useEffect IN REACT</div> <br />
@@ -62,17 +77,12 @@ const f=()=>{
 <div>useContext hook IN REACT</div> <br />
 <Usecontext/> */}
 
+ {/* <hr />
+<div>useRef IN REACT</div> <br />
+<Useref/> */}
 {/* 
 <hr />
-<div>STATES IN REACT</div> <br />
-<State/>  */}
-
-{/* <hr />
-<div>useRef IN REACT</div> <br />
-<Useref/>
-
-<hr />
-<div>useRef IN REACT</div> <br />
+<div>useReducer IN REACT</div> <br />
 <Usereducer/> */}
 
 {/* <hr />
@@ -82,10 +92,10 @@ const f=()=>{
 {/* <hr />
 <div>useMemo IN REACT</div> <br />
 <Usememo/> */}
-
-{/* <hr />
+{/* 
+ <hr />
 <div>useCallback IN REACT</div> <br />
-<Usecallback/> */}
+<Usecallback/>   */}
 
 {/* <hr />
 <div>customhooks IN REACT</div> <br />
@@ -100,15 +110,16 @@ const f=()=>{
 <Props name="aman"/>
 <Props name="ajay"/>
 <Props name="atul"/> */}
-{/* 
-<hr />
-<div>Props IN REACT</div> <br />
+
+
+{/* <hr />
+<div>PropTypes IN REACT</div> <br />
 <Propsdefault name = "avi" age={10} city="kota" />
 <Propsdefault  age={10} city="kota" />
 <Propsdefault name = "avi"  city="kota" /> */}
 
-{/* 
-<hr />
+
+{/* <hr />
 <div>Form IN REACT</div> <br />
 <Form/> */}
 
@@ -123,20 +134,19 @@ const f=()=>{
 {/* <hr />
 <div>Registartion form IN REACT</div> <br />
 <Regiform/> */}
-{/* 
-<hr />
+
+
+{/* <hr />
 <div>async setState IN REACT</div> <br />
    <div>state is {state} . Check value in console it will always be 1 less than that of in this div</div>
    <button onClick={f}>button</button> */}
 
-   {/* <hr />
-<div>list rendering IN REACT</div> <br />
-  <Listrender/> */}
+   
 
   {/* <hr />
 <div>listkey IN REACT</div> <br />
-  <Listkey/>
-   */}
+  <Listkey/> */}
+  
 
    {/* <hr />
 <div>usestate with object IN REACT</div> <br />
@@ -160,12 +170,20 @@ const f=()=>{
   <Axiosputdel/> */}
 
   {/* <hr />
-<div>router IN REACT</div> <br />
-  <Router1/> */}
+<div>Fetch() IN REACT</div> <br />
+  <Fetchuse/> */}
 
   <hr />
+<div>router IN REACT</div> <br />
+  <Router1/>
+
+  {/* <hr />
 <div>redux IN REACT</div> <br />
-  <Redux1/>
+  <Redux1/> */}
+{/* 
+  <hr />
+<div>List for steeleye</div> <br />
+  <List items={items}/> */}
 
   
   

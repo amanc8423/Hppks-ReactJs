@@ -4,11 +4,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-
 import React from 'react'
 import Routerhome from "./Routerhome";
 import Routerabout from "./Routerabout";
 import Routercontact from "./Routercontact";
+import Notfound from "./Notfound";
 
 const Router1 = () => {
   return (
@@ -25,10 +25,11 @@ const Router1 = () => {
     
 <Route exact path='/' element={ <Routerhome/> } ></Route>
     
-<Route exact path='/about' element={ <Routerabout/> } ></Route>
+<Route exact path='/about/:name' element={ <Routerabout/> } ></Route>
 
 <Route exact path='/contact' element={ <Routercontact/> } ></Route>
 
+<Route exact path="*" element={<Notfound/>}></Route>
     </Routes>
 </BrowserRouter>
 
@@ -39,6 +40,8 @@ const Router1 = () => {
 export default Router1
 
 
+// web dev simplified router 
+// https://www.youtube.com/watch?v=Ul3y1LXxzdU
 
 
 

@@ -29,7 +29,7 @@ const handleOnChange=(event)=>{
     {/* form handling is different in reacts js here valie is treated as prop which is read only there we cant simply change */}
 
     {/* <input type="text" defaultValue="aman" /> */}
-     {/* // thorugh this i can inout delete but how to handle it so i use controlled components */}
+     {/* // thorugh this i can add and  delete but how to handle it so i use controlled components */}
 
      <input type="text" name="name" value={name} onChange={handleOnChange} />
 
@@ -51,7 +51,7 @@ export default Form
 // https://www.youtube.com/watch?v=Vd8kcLbLItc&list=PLp18NAIKHWnvpLpioGs6ZAiMlpfx49KOz&index=18
 
 // 1. controlled compo control by react uncontrol are by dom
-// 2.  if we want to use controlled we can use vent handlers,usestate hooks and for uc we can use useRef hooks
+// 2.  if we want to use controlled we can use event handlers,usestate hooks and for uc we can use useRef hooks
 
 
 // we use controlled components to update form

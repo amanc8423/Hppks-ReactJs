@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Props = (props) => {
-    debugger;
+   // debugger;
     console.log(props)
     // props.name = "abc"; // will give error bec props are read only cant be changed again
   return (

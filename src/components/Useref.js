@@ -7,6 +7,7 @@ function Useref() {
     const ref2=useRef();
     useEffect(()=>{
         ref.current=ref.current+1; // it will not re-render component
+        console.log("ref is ",ref);
     ref2.current.value = ref1.current.value;
     ref2.current.style.backgroundColor="black";
     ref2.current.style.color="white";
@@ -31,7 +32,7 @@ export default Useref
 // useref used to manipulate dom
 // see w3schools
 /*
-The useRef Hook allows you to persist values between renders.
+The useRef Hook allows you to persist(prserve) values between renders.
 
 It can be used to store a mutable value that does not cause a re-render when updated.
 
